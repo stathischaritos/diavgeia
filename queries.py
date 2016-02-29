@@ -10,6 +10,10 @@ QUERIES = {
         "aggs": {
             "sponsors": {
                 "terms": {
+                    "size":100,
+                    "order" : {
+                        "expenses" : "desc"
+                    },
                     "field": "extraFieldValues.sponsor.sponsorAFMName.name"
                 },
                 "aggs": {
