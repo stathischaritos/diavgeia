@@ -1,0 +1,33 @@
+curl -X PUT "http://localhost:9200/diavgeia/" -d '{
+    "mappings": {
+        "decision": {
+            "properties": {
+                "publishTimestamp": {
+                    "type": "date"
+                },
+                submissionTimestamp: {
+                    "type": "date"
+                },
+                issueDate:  {
+                    "type": "date"
+                },
+                "extraFieldValues": {
+                    "properties" : {
+                        "sponsor" : { 
+                            "properties" : {
+                                "sponsorAFMName" : { 
+                                    "properties":{
+                                        "name": { 
+                                            "type" : "string",
+                                            "index":"not_analyzed"
+                                         }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}'; 
