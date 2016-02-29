@@ -9,3 +9,10 @@ The data is downloaded and saved in ElasticSearch for an initial view. The scrip
 Why is this interesting:
 ------------------------
 Open data is one step towards transparency in government, but the huge amounts of data availlable make it possible for many cases of unusual public spending to go unnoticed as it is burried inside millions of public spending decisions.
+
+
+Elasticsearch Installation:
+--------------------------
+You can use a really easy script found here.
+
+    https://gist.github.com/ricardo-rossi/8265589463915837429d
