@@ -5,10 +5,10 @@ curl -X PUT "http://localhost:9200/diavgeia/" -d '{
                 "publishTimestamp": {
                     "type": "date"
                 },
-                submissionTimestamp: {
+                "submissionTimestamp": {
                     "type": "date"
                 },
-                issueDate:  {
+                "issueDate":  {
                     "type": "date"
                 },
                 "extraFieldValues": {

@@ -2,7 +2,7 @@ ElasticSearch Presentation Summary
 ==================================
 ElasticSearch is a relatively new open source tool that provides state of the art search capabilities and a big collection of aggregation tools for data analysis. ES is based on Lucene which is the most popular search engine among academics in Information Retrieval research. ES however, as opposed to Lucene, is very easy to setup, has automatic clustering capabilities and provides a range of search algorithms to use out of the box. 
 
-I have used ES during my previous job to index and search over millions of documents of very high variety. Being a NoSQL framework, ES can handle very complex nested documents and provides full text search over all fields. To get the most out of it you need to provide a well designed mapping, but the default indexing capabilities are strong enough for simple text search.
+I have used ES during my previous job to index and search over millions of documents of very high variety. Being a NoSQL framework, ES can handle very complex nested documents and provides full text search over all fields. To get the most out of it you need to provide a well designed mapping, but the default indexing capabilities are strong enough for simple text search with no need for data preprocessing and normalisation that you would be required from traditional tools like Matlab, excel , tableau etc. You just throw it in ES and it works.
 
 Text search is usualy taken for granted or overlooked, which leads to really bad examples of search engines (ex. wikipedia, typical forum and domain specific search boxes), but with a very small amount of work ES can provide very good document rankings, autocompletion and spell check.
 
@@ -29,8 +29,6 @@ Although most of the aggregated expenses make sense, there seem to be a few sign
     - For some expense entries, instead of the expense amount, the grantee tax code was used, resulting in very misleading aggregated results
 
     - For many of the expenses there are very few explanations given, which leads me to believe that these decisions would be very hard to use for NLP. A lot of unexplained reference codes are present in these documents which means they could be enriched with relations from this or some other government data source which I haven't found yet.
-
-
 
 
 
